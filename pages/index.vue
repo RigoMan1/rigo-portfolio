@@ -5,7 +5,7 @@ function storeTextInClipboard(text: string) {
 </script>
 
 <template>
-  <div class="text-center -translate-y-32 p-2">
+  <div class="text-center sm:-translate-y-32 p-2">
     <h1 class="text-5xl">Hi, I'm Rigo</h1>
     <p class="text-2xl leading-[3.25rem] mt-3">
       <span>
@@ -23,7 +23,7 @@ function storeTextInClipboard(text: string) {
       <br />
     </p>
 
-    <div class="text-2xl text-zinc-500 mt-10 flex items-center justify-center">
+    <div class="text-2xl text-zinc-500 mt-10 flex items-center justify-center" >
       <div class="relative mr-3">
         <span class="block w-3 h-3 bg-emerald-400/50 rounded-full" />
         <span

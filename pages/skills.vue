@@ -7,33 +7,33 @@ const selectedSkill = computed(() => skills[selectedSkillIndex.value]);
 
 const skills = skillsData;
 
-// let startTime = 0 as number | null;
+let startTime = 0 as number | null;
 
-// const DURATION = 4000;
-// const TOTAL_SLIDES = skills.length;
+const DURATION = 4000;
+const TOTAL_SLIDES = skills.length;
 
-// const nextSlide = (timestamp = 0) => {
-//   if (startTime === null) startTime = timestamp;
-//   const elapsed = timestamp - startTime;
+const nextSlide = (timestamp = 0) => {
+  if (startTime === null) startTime = timestamp;
+  const elapsed = timestamp - startTime;
 
-//   if (elapsed > DURATION) {
-//     if (selectedSkillIndex.value < TOTAL_SLIDES - 1) {
-//       selectedSkillIndex.value++;
-//     } else {
-//       selectedSkillIndex.value = 0;
-//     }
-//     startTime = timestamp;
-//   }
-//   requestAnimationFrame(nextSlide);
-// };
+  if (elapsed > DURATION) {
+    if (selectedSkillIndex.value < TOTAL_SLIDES - 1) {
+      selectedSkillIndex.value++;
+    } else {
+      selectedSkillIndex.value = 0;
+    }
+    startTime = timestamp;
+  }
+  requestAnimationFrame(nextSlide);
+};
 
-// watch(selectedSkillIndex, () => {
-//   startTime = null;
-// });
+watch(selectedSkillIndex, () => {
+  startTime = null;
+});
 
-// onMounted(() => {
-//   requestAnimationFrame(nextSlide);
-// });
+onMounted(() => {
+  requestAnimationFrame(nextSlide);
+});
 </script>
 
 <template>

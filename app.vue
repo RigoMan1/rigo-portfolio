@@ -1,11 +1,17 @@
+<script setup lang="ts">
+import { useDisplay } from './modules/sui/runtime/composables/display';
+const { smAndDown } = useDisplay();
+</script>
+
 <template>
   <v-app class="bg-zinc-900">
     <v-app-bar
-      height="200"
+      :height="smAndDown ? 96 : 200"
       class="flex justify-center items-center space-x-2 sm:space-x-16 bg-zinc-900 w-full"
     >
       <v-button
-        class="text-lg text-zinc-400 px-4 py-3 rounded-lg hover:bg-white/10 focus:bg-white/10"
+        class="sm:text-lg text-zinc-400 px-4 py-3 rounded-lg hover:bg-white/10
+          focus:bg-white/10"
         active-class="bg-white/10"
         to="/"
       >
@@ -16,7 +22,8 @@
         <span>About me</span>
       </v-button>
       <v-button
-        class="text-lg text-zinc-400 px-4 py-3 rounded-lg hover:bg-white/10 focus:bg-white/10"
+        class="sm:text-lg text-zinc-400 px-4 py-3 rounded-lg hover:bg-white/10
+          focus:bg-white/10"
         active-class="bg-white/10"
         to="/projects"
       >
@@ -27,7 +34,8 @@
         <span>Projects</span>
       </v-button>
       <v-button
-        class="text-lg text-zinc-400 px-4 py-3 rounded-lg hover:bg-white/10 focus:bg-white/10"
+        class="sm:text-lg text-zinc-400 px-4 py-3 rounded-lg hover:bg-white/10
+          focus:bg-white/10"
         active-class="bg-white/10"
         to="/skills"
       >
