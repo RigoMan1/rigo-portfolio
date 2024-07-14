@@ -8,4 +8,7 @@ export default defineNuxtConfig({
     exposeConfig: true,
     configPath: './tailwind.config.ts',
   },
+  app: {
+    pageTransition: { name: 'page', mode: 'out-in' },
+  },
 });

@@ -1,3 +1,5 @@
+@import './v-button.css';
+
 html {
   color-scheme: dark;
 }
@@ -5,4 +7,131 @@ html {
 .bd,
 [bd] {
   border: 1px solid magenta;
+}
+
+.bg-skill-color {
+  /* --rgb: 0, 225, 244; */
+  --rgb:;
+  --opacity: 0.2;
+  background-color: rgba(var(--rgb), var(--opacity));
+}
+
+.color-vue {
+  --rgb: 65, 184, 131;
+}
+.color-javascript {
+  --rgb: 240, 219, 79;
+}
+.color-typescript {
+  --rgb: 47, 128, 237;
+}
+.color-html {
+  --rgb: 241, 101, 41;
+}
+.color-css {
+  --rgb: 51, 169, 220;
+}
+.color-tailwind {
+  --rgb: 56, 189, 248;
+}
+.color-nuxt {
+  --rgb: 0, 197, 142;
+}
+.color-astro {
+  --rgb: 255, 85, 4;
+}
+.color-vuetify {
+  --rgb: 22, 151, 246;
+}
+.color-firebase {
+  --rgb: 255, 180, 0;
+}
+.color-mongodb {
+  --rgb: 67, 153, 52;
+}
+.color-supabase {
+  --rgb: 62, 207, 142;
+}
+.color-node {
+  --rgb: 84, 158, 69;
+}
+
+.color-clerkjs {
+  --rgb: 103, 58, 183;
+}
+.color-chatgpt {
+  /* lightgreen */
+  --rgb: 116, 170, 156;
+}
+.color-sui {
+  --rgb: 0, 123, 255;
+}
+
+/* Transition Leave Styles */
+.v-slides-fade-scale-transition-leave-from,
+.v-slides-fade-scale-transition-leave-to,
+.v-slides-fade-scale-transition-leave-from,
+.v-slides-fade-scale-transition-leave-to,
+.v-slides-fade-scale-transition-leave-from,
+.v-slides-fade-scale-transition-leave-to,
+.v-slides-fade-scale-transition-leave-from,
+.v-slides-fade-scale-transition-leave-to {
+  position: absolute !important;
+  top: 0;
+  width: 100%;
+}
+
+/* Transition Activators */
+.v-slides-fade-scale-transition-enter-active,
+.v-slides-fade-scale-transition-leave-active {
+  transition:
+    transform 0.3s ease-out,
+    opacity 0.3s ease-out;
+}
+
+/* Initial and Final States for Enter and Leave */
+.v-slides-fade-scale-transition-enter-from,
+.v-slides-fade-scale-transition-leave-to {
+  opacity: 0;
+  transform: scale(0.95);
+}
+
+.v-slides-fade-scale-transition-enter-to,
+.v-slides-fade-scale-transition-leave-from {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Fade Transition */
+/* Transition Leave Styles */
+.v-slides-fade-transition-leave-from,
+.v-slides-fade-transition-leave-to,
+.v-slides-fade-transition-leave-from,
+.v-slides-fade-transition-leave-to,
+.v-slides-fade-transition-leave-from,
+.v-slides-fade-transition-leave-to,
+.v-slides-fade-transition-leave-from,
+.v-slides-fade-transition-leave-to {
+  position: absolute !important;
+  top: 0;
+  width: 100%;
+}
+
+/* Transition Activators */
+.v-slides-fade-transition-enter-active,
+.v-slides-fade-transition-leave-active {
+  transition:
+    transform 0.3s ease-out,
+    opacity 0.3s ease-out;
+}
+
+/* Initial and Final States for Enter and Leave */
+.v-slides-fade-transition-enter-from,
+.v-slides-fade-transition-leave-to {
+  opacity: 0;
+}
+
+.v-slides-fade-transition-enter-to,
+.v-slides-fade-transition-leave-from {
+  opacity: 1;
 }

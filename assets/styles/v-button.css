@@ -1,0 +1,4 @@
+.v-button {
+  transition: var(--v-ease-in-out) 200ms;
+  cursor: pointer;
+}
