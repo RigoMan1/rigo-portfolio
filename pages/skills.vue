@@ -62,7 +62,7 @@ onMounted(() => {
             />
           </div>
 
-          <h2 class="text-5xl font-bold capitalize mt-4">
+          <h2 class="text-5xl font-bold capitalize mt-4 text-zinc-200">
             {{ selectedSkill.name }}
           </h2>
 
@@ -105,7 +105,7 @@ onMounted(() => {
   </section>
 </template>
 
-<style>
+<style scoped>
 .bg-skill-color {
   --opacity: 0;
 

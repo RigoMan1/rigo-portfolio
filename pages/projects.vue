@@ -32,7 +32,7 @@ function handleClick(toggle: any) {
           >
             <v-button
               @click="toggle"
-              class="text-lg text-zinc-400 px-4 py-3 rounded-lg hover:bg-white/10 focus:bg-white/10"
+              class=" text-zinc-400 px-4 py-3 rounded-lg hover:bg-white/10 focus:bg-white/10"
             >
               <span>{{ project.title }}</span>
             </v-button>
@@ -80,7 +80,10 @@ function handleClick(toggle: any) {
         >
           <div class="py-8">
             <div class="flex justify-between items-center mb-6">
-              <span class="text-zinc-500 uppercase text-sm block">
+              <span
+                class="text-zinc-500 uppercase text-xs tracking-wide block px-2 py-0.5 bg-gray-500/10
+                  rounded"
+              >
                 {{ project.type }}
               </span>
 
@@ -98,10 +101,10 @@ function handleClick(toggle: any) {
               </a>
             </div>
 
-            <h2 class="text-5xl font-bold capitalize">
+            <h2 class="text-5xl font-bold capitalize text-zinc-200">
               {{ project.title }}
             </h2>
-            <p class="text-zinc-500 leading-loose text-lg mt-8">
+            <p class="text-zinc-500 leading-loose mt-8">
               {{ project.description }}
             </p>
 
@@ -110,7 +113,7 @@ function handleClick(toggle: any) {
               name="i-heroicons-arrow-top-right-on-square"
             />
 
-            <ul class="text-zinc-500 leading-loose text-lg ml-6 mt-2">
+            <ul class="text-zinc-500 leading-loose ml-6 mt-2">
               <li
                 class="flex space-x-2 my-3"
                 v-for="(keyPoint, i) in project.keyPoints"
@@ -148,7 +151,7 @@ function handleClick(toggle: any) {
           >
             <v-button
               @click="handleClick(toggle)"
-              class="text-lg text-zinc-400 px-4 py-3 rounded-lg hover:bg-white/10 focus:bg-white/10"
+              class=" text-zinc-400 px-4 py-3 rounded-lg hover:bg-white/10 focus:bg-white/10"
             >
               <span>{{ project.title }}</span>
             </v-button>
@@ -162,7 +165,10 @@ function handleClick(toggle: any) {
           style="width: 90vw; max-width: 600px"
         >
           <div class="flex justify-between items-center mb-6">
-            <span class="text-zinc-500 uppercase text-sm block">
+            <span
+              class="text-zinc-500 uppercase text-sm tracking-wide block px-2 py-0.5 bg-gray-500/10
+                rounded"
+            >
               {{ activeProject.type }}
             </span>
 
@@ -180,7 +186,7 @@ function handleClick(toggle: any) {
             </a>
           </div>
 
-          <h2 class="text-2xl font-bold capitalize">
+          <h2 class="text-2xl font-bold capitalize text-zinc-200">
             {{ activeProject.title }}
           </h2>
 
@@ -206,7 +212,7 @@ function handleClick(toggle: any) {
             </div>
           </div>
 
-          <p class="text-zinc-500 leading-loose text-lg mt-8">
+          <p class="text-zinc-500 leading-loose mt-8">
             {{ activeProject.description }}
           </p>
 
@@ -215,7 +221,7 @@ function handleClick(toggle: any) {
             name="i-heroicons-arrow-top-right-on-square"
           />
 
-          <ul class="text-zinc-500 leading-loose text-lg ml-6 mt-2">
+          <ul class="text-zinc-500 leading-loose ml-6 mt-2">
             <li
               class="flex space-x-2 my-3"
               v-for="(keyPoint, i) in activeProject.keyPoints"

@@ -28,10 +28,9 @@ export const projects: Project[] = [
       'My first mobile app, published on the Google Play Store (in-progress)',
       'Designed a drag-and-drop interface for interacting with cards for a hands-on experience.',
       'Integrated ChatGPT to generate personalized tarot readings',
-      '⚠️ use mobile view for best experience',
     ],
     type: 'Mobile App',
-    link: 'https://www.arcana-tarot.net/reader-select',
+    link: 'https://play.google.com/store/apps/details?id=net.arcana_tarot.app&hl=en_US',
   },
   {
     id: 'portfolio-website',
