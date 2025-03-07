@@ -23,21 +23,22 @@ export const projects: Project[] = [
     title: 'Arcana - Tarot',
     description:
       'A mobile PWA/TWA app that offers interactive tarot readings, combining Nuxt3 and Supabase with a gamified user experience.',
-    technologies: ['nuxt', 'supabase', 'tailwind', 'chatgpt', 'sui'],
+    technologies: ['nuxt', 'supabase', 'tailwind', 'chatgpt'],
     keyPoints: [
       'My first mobile app, published on the Google Play Store (in-progress)',
       'Designed a drag-and-drop interface for interacting with cards for a hands-on experience.',
       'Integrated ChatGPT to generate personalized tarot readings',
     ],
     type: 'Mobile App',
-    link: 'https://play.google.com/store/apps/details?id=net.arcana_tarot.app&hl=en_US',
+    // link: 'https://play.google.com/store/apps/details?id=net.arcana_tarot.app&hl=en_US',
+    link: 'https://arcana-flame.vercel.app/',
   },
   {
     id: 'portfolio-website',
     title: 'Portfolio Website',
     description:
       'My personal portfolio website built with Nuxt and TailwindCSS, showcasing my projects and skills.',
-    technologies: ['nuxt', 'tailwind', 'sui'],
+    technologies: ['nuxt', 'tailwind'],
     keyPoints: [
       'Developed a fully responsive layout',
       'Integrated a custom component library for UI elements',
@@ -64,7 +65,7 @@ export const projects: Project[] = [
     title: 'ListCleanser SaaS App',
     description:
       "ListCleanser's SaaS application for email verification, built with Nuxt and Clerk.js.",
-    technologies: ['nuxt', 'clerkjs', 'tailwind', 'typescript', 'sui'],
+    technologies: ['nuxt', 'clerkjs', 'tailwind', 'typescript'],
     keyPoints: [
       'Implemented the front-end UI.',
       'Integrated authentication using Clerk.js',
@@ -72,18 +73,18 @@ export const projects: Project[] = [
     type: 'Web Application',
     link: 'https://listcleanser-app.vercel.app/sign-in',
   },
-  {
-    id: 'sui',
-    title: 'SUI Component Library',
-    description:
-      'A lightweight Nuxt3 component library, inspired by Vuetify3 that I use personally for my projects.',
-    technologies: ['nuxt', 'typescript', 'css'],
-    keyPoints: [
-      'Extracted a subset of Vuetify3 components, removing styling to allow seamless integration with TailwindCSS.',
-      'Chose to include only essential components to keep the library lean and manageable as a solo developer.',
-      '⚠️ under active development, not responsive yet',
-    ],
-    type: 'Component Library',
-    link: 'https://core-ui-docs.vercel.app/',
-  },
+  // {
+  //   id: 'sui',
+  //   title: 'SUI Component Library',
+  //   description:
+  //     'A lightweight Nuxt3 component library, inspired by Vuetify3 that I use personally for my projects.',
+  //   technologies: ['nuxt', 'typescript', 'css'],
+  //   keyPoints: [
+  //     'Extracted a subset of Vuetify3 components, removing styling to allow seamless integration with TailwindCSS.',
+  //     'Chose to include only essential components to keep the library lean and manageable as a solo developer.',
+  //     '⚠️ under active development, not responsive yet',
+  //   ],
+  //   type: 'Component Library',
+  //   link: 'https://core-ui-docs.vercel.app/',
+  // },
 ];

@@ -88,12 +88,12 @@ export const skills = [
     name: 'Vuetify 3',
     description: `Vuetify 3 is my favorite UI library for Vue.js, it’s the most polished and decent looking framework in my opinion, and I know it inside and out.`,
   },
-  {
-    color: `color-sui`,
-    icon: skillIcons.sui,
-    name: 'Semantic UI',
-    description: `My own personal component library, inspired by Vueify. It’s lightweight and easy to customize and great for building landing pages`,
-  },
+  // {
+  //   color: `color-sui`,
+  //   icon: skillIcons.sui,
+  //   name: 'Semantic UI',
+  //   description: `My own personal component library, inspired by Vueify. It’s lightweight and easy to customize and great for building landing pages`,
+  // },
   {
     color: `color-tailwind`,
     icon: skillIcons.tailwind,
